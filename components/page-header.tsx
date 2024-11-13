@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-
 interface PageHeaderProps {
   className?: string;
   children: React.ReactNode;
@@ -8,6 +6,16 @@ interface PageHeaderProps {
   description?: string;
 }
 
+import { useRive } from "@rive-app/react-canvas";
+import HeroAnimation from "./HeroRive";
+
+export const UrlDemo = () => {
+  const { rive, RiveComponent } = useRive({
+    src: "https://cdn.prod.website-files.com/672e7d71f6441af1eae021e0/67337a97bef76e0f38ac4090_Auricles%20v1.4.riv",
+    autoplay: true,
+  });
+  return <RiveComponent />;
+};
 export default function PageHeader({
   className,
   // children,
@@ -23,23 +31,21 @@ export default function PageHeader({
               {title}
             </h1>
           ) : (
+            // <div className="absolute inset-0 p-0 m-0 bg-black">
+            //   <UrlDemo />
+            // </div>
             <div className="flex justify-center w-full pb-24">
-              <div className="relative flex items-center justify-center">
-                {/* Circles */}
-                {/* <div className="absolute border-8 border-transparent rounded-full w-96 h-96 border-rainbow animate-pulse-ring"></div>
-                <div className="absolute border-8 border-transparent rounded-full w-88 h-88 border-rainbow animate-pulse-ring"></div>
-                <div className="absolute border-8 border-transparent rounded-full w-80 h-80 border-rainbow animate-pulse-ring"></div> */}
+              {/* <div className="relative z-50 flex items-center justify-center"> */}
+              {/* <HeroAnimation /> */}
 
-                {/* Image */}
-                <Image
+              {/* <Image
                   src="/images/brand/Auracles Full Logo and Text (White + Colour Treatment).png"
                   width={500} // Adjust this value as needed
                   height={300} // Adjust this value as needed
                   alt="logo"
                   priority={true}
                   className="relative z-10"
-                />
-              </div>
+                /> */}
             </div>
           )}
           <p className="text-lg font-semibold text-gray-700 dark:text-gray-100">
@@ -59,37 +65,6 @@ export default function PageHeader({
           </div>
         </div> */}
       </div>
-      <style jsx>{`
-        @keyframes pulse-ring {
-          0% {
-            transform: scale(1);
-            opacity: 0.7;
-          }
-          50% {
-            transform: scale(1.1);
-            opacity: 1;
-          }
-          100% {
-            transform: scale(1);
-            opacity: 0.7;
-          }
-        }
-        .border-rainbow {
-          border-radius: 50%;
-          border-style: solid;
-          border-image: conic-gradient(
-              from 180deg at 50% 50%,
-              #f00,
-              #ff0,
-              #0f0,
-              #0ff,
-              #00f,
-              #f0f,
-              #f00
-            )
-            1;
-        }
-      `}</style>
     </div>
   );
 }

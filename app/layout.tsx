@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Link to the favicon */}
+
         <link
           rel="apple-touch-icon"
           href="https://cdn.prod.website-files.com/672e7d71f6441af1eae021e0/67321733e9411465767e0a55_Auracles%20Favicon.png"

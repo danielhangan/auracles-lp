@@ -12,6 +12,10 @@ export default function Footer() {
                 target="_blank"
               >
                 @danielhangan
+              </a>
+              {" & "}
+              <a className="font-medium text-indigo-500 hover:underline">
+                K. Geiger
               </a>{" "}
             </p>
           </div>

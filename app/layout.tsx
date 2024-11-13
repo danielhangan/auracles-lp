@@ -22,6 +22,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Link to the favicon */}
+        <link
+          rel="apple-touch-icon"
+          href="https://cdn.prod.website-files.com/672e7d71f6441af1eae021e0/67321733e9411465767e0a55_Auracles%20Favicon.png"
+        />
+
+        <link
+          rel="shortcut icon"
+          href="https://cdn.prod.website-files.com/672e7d71f6441af1eae021e0/67321738c9ce93f6d27e9c0e_Auracles%20Webclip.png"
+          type="image/x-icon"
+        />
+      </head>
       {/* suppressHydrationWarning: https://github.com/vercel/next.js/issues/44343 */}
       <body
         className={`${inconsolata.variable} ${inconsolata.variable} font-inter antialiased bg-indigo-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 tracking-tight`}

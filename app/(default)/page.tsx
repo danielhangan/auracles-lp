@@ -19,7 +19,10 @@ export default function Home() {
             title=""
             description=" - a timely non-profit layer, empowering music makers to verify and permission their assets and information— led by Imogen Heap, currently in-development"
           >
-            <Link href="https://ip.auracles.io" className="text-xl font-light">
+            <Link
+              href="https://ip.auracles.io"
+              className="text-xl font-light capitalize"
+            >
               Try beta now
             </Link>
           </PageHeader>

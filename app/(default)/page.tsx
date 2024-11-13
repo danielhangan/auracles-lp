@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-black">
+    <div className="flex flex-col min-h-screen overflow-y-auto bg-black">
       {/* <div className="fixed inset-0 z-0"> */}
       <HeroAnimation />
       {/* </div> */}

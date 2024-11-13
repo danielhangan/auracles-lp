@@ -13,11 +13,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex flex-col min-h-screen bg-black">
+    <div className="flex flex-col min-h-screen bg-black">
+      {/* <div className="fixed inset-0 z-0"> */}
       <HeroAnimation />
-      <div className="relative z-10 flex-grow">
-        <div className="flex flex-col justify-between min-h-full pb-24 md:pb-20">
-          <div className="flex flex-col justify-between px-4 sm:px-6">
+      {/* </div> */}
+      <div className="relative z-10 flex-grow overflow-auto">
+        <div className="flex flex-col min-h-full">
+          <div className="flex-grow px-4 pb-24 sm:px-6 md:pb-20">
             <PageHeader
               className="mb-12 text-white"
               title=""
@@ -33,6 +35,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

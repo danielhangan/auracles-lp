@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Additional styles */
+@import "css/additional-styles/utility-patterns.css";
+@import "css/additional-styles/theme.css";
+
+@import "tailwindcss/utilities";
+
+:root {
+  --black: #0a0a0a;
+  --white: #eaeaea;
+  --pink: #f02c6a;
+  --green: #12f1c4;
+  --purple: #5224dc;
+}
+
+body {
+  background-color: var(--pink);
+  color: var(--white);
+}

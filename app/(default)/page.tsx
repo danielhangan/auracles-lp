@@ -13,10 +13,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="bg-black">
+    <section className="flex flex-col min-h-screen bg-black">
       <HeroAnimation />
-      <div className="relative z-10">
-        <div className="flex flex-col justify-between min-h-screen pb-24 overflow-y-auto md:pb-20">
+      <div className="relative z-10 flex-grow">
+        <div className="flex flex-col justify-between min-h-full pb-24 md:pb-20">
           <div className="flex flex-col justify-between px-4 sm:px-6">
             <PageHeader
               className="mb-12 text-white"

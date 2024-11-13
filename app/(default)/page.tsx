@@ -7,13 +7,14 @@ export const metadata = {
 import AuraclesCta from "@/components/CtaAuracles";
 import PageHeader from "@/components/page-header";
 import TextCard from "@/components/TextCard";
+import Footer from "@/components/ui/footer";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <section>
-      <div className="pt-32 pb-12 md:pt-22 md:pb-20">
-        <div className="flex flex-col justify-between h-[80vh] px-4 sm:px-6">
+      <div className="flex flex-col justify-between h-screen pt-32 pb-24 overflow-y-auto md:pt-22 md:pb-20">
+        <div className="flex flex-col justify-between px-4 sm:px-6">
           <PageHeader
             className="mb-12"
             title=""
@@ -30,8 +31,8 @@ export default function Home() {
           <TextCard />
 
           <AuraclesCta />
-          {/* <SubscribeForm /> */}
         </div>
+        <Footer />
       </div>
     </section>
   );

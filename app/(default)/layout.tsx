@@ -1,7 +1,6 @@
 "use client";
 
 import BgShapes from "@/components/bg-shapes";
-import Footer from "@/components/ui/footer";
 
 export default function DefaultLayout({
   children,
@@ -15,8 +14,6 @@ export default function DefaultLayout({
       {/* <Header /> */}
 
       <main className="grow">{children}</main>
-
-      <Footer />
     </>
   );
 }

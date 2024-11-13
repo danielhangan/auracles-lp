@@ -35,13 +35,13 @@ devDependencies:
     specifier: ^0.5.7
     version: 0.5.9(tailwindcss@3.4.14)
   autoprefixer:
-    specifier: ^10.4.16
+    specifier: ^10.4.20
     version: 10.4.20(postcss@8.4.49)
   postcss:
-    specifier: ^8.4.32
+    specifier: ^8.4.49
     version: 8.4.49
   tailwindcss:
-    specifier: ^3.3.6
+    specifier: ^3.4.14
     version: 3.4.14
 
 packages:

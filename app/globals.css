@@ -19,3 +19,26 @@ body {
   background-color: var(--pink);
   color: var(--white);
 }
+
+@media screen and (max-width: 767px) {
+  .hero-anim-wrap {
+    margin-top: -14vw;
+    margin-bottom: -14vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero-anim-wrap {
+    margin-top: -14rem;
+    margin-bottom: -4.9rem;
+  }
+}
+
+.hero-anim-wrap {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -20vw;
+  margin-bottom: -7vw;
+  display: flex;
+}

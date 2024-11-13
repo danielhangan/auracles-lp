@@ -17,7 +17,7 @@ const HeroAnimation = () => {
 
   return (
     <div className="relative w-full h-[1400px] bg-black">
-      <div className="absolute inset-0 -top-[200px]">
+      <div className="absolute inset-0 -top-[600px]">
         <RiveComponent className="w-full h-full" />
       </div>
       <div className="absolute inset-0 bg-transparent pointer-events-auto" />

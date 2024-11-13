@@ -29,6 +29,7 @@ export default function PageHeader({
                 height={300} // Adjust this value as needed
                 style={{ objectFit: "cover" }}
                 alt="logo"
+                priority={true}
               />
             </div>
           )}

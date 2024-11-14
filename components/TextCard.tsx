@@ -9,7 +9,7 @@ export default function TextCard() {
             aria-hidden="true"
           /> */}
           <div className="space-y-3">
-            <div className="flex justify-center font-light">
+            <div className="flex justify-center font-light text-center">
               <p>
                 Auracles empowers music makers worldwide to finally connect,
                 verify and manage their assets and information, to fill the most

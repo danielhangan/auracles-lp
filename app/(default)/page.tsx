@@ -18,14 +18,14 @@ export default function Home() {
         <HeroAnimation />
       </div>
       <div className="relative z-10 pt-[60vh]">
-        <div className="px-4 sm:px-6">
-          <PageHeader
+        <div className="px-4 py12 md:py-24 sm:px-6">
+          {/* <PageHeader
             className="mb-12 text-white"
             title=""
             description="Auracles empowering music makers to verify and permission their assets and information— led by Imogen Heap, currently in-development"
           >
             ""
-          </PageHeader>
+          </PageHeader> */}
 
           <TextCard />
 

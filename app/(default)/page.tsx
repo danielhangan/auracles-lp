@@ -13,22 +13,26 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-black">
-      <HeroAnimation />
-      <div className="px-4 py-24 sm:px-6 md:py-20">
-        <PageHeader
-          className="mb-12 text-white"
-          title=""
-          description="Auracles empowering music makers to verify and permission their assets and information— led by Imogen Heap, currently in-development"
-        >
-          ""
-        </PageHeader>
-
-        <TextCard />
-
-        <AuraclesCta />
+    <div className="relative bg-black">
+      <div className="absolute inset-0 z-0">
+        <HeroAnimation />
       </div>
-      <Footer />
+      <div className="relative z-10 pt-[60vh]">
+        <div className="px-4 sm:px-6">
+          <PageHeader
+            className="mb-12 text-white"
+            title=""
+            description="Auracles empowering music makers to verify and permission their assets and information— led by Imogen Heap, currently in-development"
+          >
+            ""
+          </PageHeader>
+
+          <TextCard />
+
+          <AuraclesCta />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
